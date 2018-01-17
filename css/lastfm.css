@@ -1,0 +1,51 @@
+.history .track{
+    border: 1px solid lightgrey;
+    height: 150px;
+    width: 100px;
+    overflow: hidden;
+    float: left;
+}
+
+.track img{
+    width:100%;
+}
+
+.track-history{
+    overflow-x: scroll;
+    height: 45%;
+    width: 100%;
+}
+
+.current-track {
+    height: auto;
+}
+
+.current-tracks{
+    min-height: 50px;
+}
+
+h1 a{
+    color: inherit;
+}
+
+h1{
+    margin: 20px 20px 20px 120px;
+}
+.profile-pic{
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #E0E0E1;
+    top: 5px;
+    width: 99px;
+    height: 99px;
+    overflow: hidden;
+    z-index: 1;
+    float: right;
+    display: block;
+    left: 15px;
+    background-color: white;
+}
+
+.profile-pic img{
+    width: 100px;
+}

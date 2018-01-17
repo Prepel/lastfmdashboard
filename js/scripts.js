@@ -8,16 +8,7 @@ var lastfm = new LastFM({
     cache     : cache
 });
 
-var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-var users = [
-    'Prepel_',
-    'mescie',
-    'iFiz',
-    'gloryinflames'
-]
-
-setInterval(getRecentTrackPerUser, 30000);
+setInterval(getRecentTrackPerUser, refreshRate);
 initPage();
 
 function getRecentTrackPerUser()

@@ -4,34 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Nick Slabbekoorn - Developer">
-    <meta name="keywords" content="Nick, Slabbekoorn, PHP, Developer, Ontwikkelaar, PHP">
-    <meta name="author" content="Nick Slabbekoorn">
-
     <title>Last.fm</title>
 
     <!-- Open Sans Google font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
     <!-- Raleway Google font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700">
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="/img/favico/marqa.ico">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/favico/apple-icon-60x60.png">
-    <!-- Ionicon fonts css file -->
-    <link rel="stylesheet" href="/css/ionicons.min.css">
-    <!-- magnific popup css file -->
-    <link rel="stylesheet" href="/css/magnific-popup.css">
-    <!-- Animate.css file -->
-    <link rel="stylesheet" href="/css/animate.css">
-    <!-- Owl carousel css file -->
-    <link rel="stylesheet" href="/css/owl.carousel.css">
     <!-- Bootstrap file -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <!-- Custom styles css file -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- Vegas BG slider -->
-    <link rel="stylesheet" href="/css/vegas.css">
-    <link rel="stylesheet" href="/lastfm/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="/lastfm/css/lastfm.css">
 
@@ -41,17 +21,6 @@
     <![endif]-->
 
 <body>
-<!-- Start Loading page -->
-<div class="loading loaded">
-    <div class="loading-wrapper">
-        <div class="rec r1"></div>
-        <div class="rec r2"></div>
-        <div class="rec r3"></div>
-        <div class="rec r4"></div>
-        <div class="rec r5"></div>
-    </div>
-</div>
-<!-- End Loading page -->
 
 <div id="users">
 

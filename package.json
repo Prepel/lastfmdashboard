@@ -1,0 +1,30 @@
+{
+  "name": "lastfmdashboard",
+  "version": "1.0.0",
+  "description": "A simple dashboard to monitor up to 4 users of last.fm and the songs they listen to.",
+  "main": "config.dist.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.23.5",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.3.1",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "node-sass": "^4.7.2",
+    "popper.js": "^1.12.9"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^3.0.0"
+  }
+}

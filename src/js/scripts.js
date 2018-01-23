@@ -47,7 +47,7 @@ function getRecentTrackPerUser()
 function getLast10TracksPerUser()
 {
     users.forEach(function(username){
-        lastfm.user.getRecentTracks({user: username, limit: 100, extended: 1}, {success: function(data){
+        lastfm.user.getRecentTracks({user: username, limit: 10, extended: 1}, {success: function(data){
 
             // we load the last played track in another function, so shift it from the array.
             data.recenttracks.track.shift();

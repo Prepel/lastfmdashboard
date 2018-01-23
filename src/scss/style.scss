@@ -7,7 +7,7 @@
 }
 
 .track img{
-    width:100%;
+    width: 100%;
 }
 
 .track-history{
@@ -20,18 +20,19 @@
     height: auto;
 }
 
-.current-tracks{
+.current-tracks {
     min-height: 50px;
 }
 
-h1 a{
+h1 a {
     color: inherit;
 }
 
-h1{
+h1 {
     margin: 20px 20px 20px 120px;
 }
-.profile-pic{
+
+.profile-pic {
     position: absolute;
     border-radius: 50%;
     border: 2px solid #E0E0E1;
@@ -44,8 +45,8 @@ h1{
     display: block;
     left: 15px;
     background-color: white;
-}
 
-.profile-pic img{
-    width: 100px;
+    img {
+        width: 100px;
+    }
 }

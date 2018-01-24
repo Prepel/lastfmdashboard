@@ -1,15 +1,13 @@
 <html lang="en"><head>
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Nick Slabbekoorn">
+    <meta name="description" content="Last FM dashboard with our latest played tracks">
 
-    <title>Last.fm</title>
+    <title>Last FM - Dashboard</title>
 
-    <!-- Open Sans Google font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
-    <!-- Raleway Google font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto+Condensed" rel="stylesheet">
 
     <link rel="stylesheet" href="public/css/style.css">
 <body>
@@ -18,41 +16,43 @@
     <div class="row" id="users">
 
         <div class="col-3" id="user-template" style="display:none">
-            <h1><a href="{{userurl}}" target="_blank">{{username}}</a></h1>
-            <div class="profile-pic">
-                <img src="{{userimage}}" />
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="{{userimage}}" />
+                </div>
+                <div class="user__name"><a href="{{userurl}}" target="_blank">{{username}}</a></div>
             </div>
+
             <div class="row current-tracks" id="current-tracks-{{username}}" style=""></div>
             <div class="row track-history" id="tracks-{{username}}"></div>
         </div>
 
-        <div class="col-12 text-center current-track" id="current-track-template" style="display:none">
+        <div class="col-12 current-track" id="current-track-template" style="display:none">
             <div class="row">
                 <div class="col-12">
-                    <img src="{{image-src}}"/>
-                </div>
-                <div class="col-12">
-                    <h3>
-                        <img id="nowplaying-{{username}}"src="https://www.last.fm/static/images/icons/eq_icon.2ee5f390e4e9.gif"/>
-                        {{artist}} - {{titel}}
-                    </h3>
+                    <div class="albumart">
+                        <img src="{{image-src}}" class="albumart__image"/>
+
+                        <p class="albumart__song"><img id="nowplaying-{{username}}" src="https://www.last.fm/static/images/icons/eq_icon.2ee5f390e4e9.gif"/> {{artist}} - {{titel}}</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-12 track text-center" id="track-template" style="display:none">
-            <div class="row">
-                <div class="col-4">
+        <div class="col-12 track" id="track-template" style="display:none">
+                <div class="track__image">
                     <img src="{{image-src}}"/>
                 </div>
-                <div class="col-8 text-left">
-                    <h6>{{datetime}}</h6>
-                    <h7>
+                <div class="track__info">
+                    <p>
+                        <span class="track__info__date">
+                            {{datetime}}
+                        </span>
                         {{artist}} - {{titel}}
-                        <a href="spotify:search:{{searchQuery}}" class="text-success"><i class="fa fa-spotify"></i></a>
-                    </h7>
+                    </p>
+
+                    <a href="spotify:search:{{searchQuery}}" class="track__info__spotify"><i class="fa fa-spotify"></i></a>
                 </div>
-            </div>
         </div>
     </div>
 </div>

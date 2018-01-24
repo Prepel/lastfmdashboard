@@ -13,16 +13,16 @@ gulp.task('serve', ['sass'], function() {
         server: "./"
     });
 
-    gulp.watch("src/scss/**/*.scss", ['sass']);
-    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch('src/scss/**/*.scss', ['sass']);
+    gulp.watch('*.html').on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src([
-    	"src/scss/**/*.scss",
     	'node_modules/bootstrap/scss/bootstrap.scss',
-    	'node_modules/font-awesome/scss/font-awesome.scss'
+    	'node_modules/font-awesome/scss/font-awesome.scss',
+        'src/scss/**/*.scss'
     	])
         .pipe(sass())
         .pipe(minifyCSS())

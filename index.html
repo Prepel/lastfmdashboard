@@ -51,12 +51,14 @@
                         {{artist}} - {{titel}}
                     </p>
 
-                    <a href="spotify:search:{{searchQuery}}" class="track__info__spotify">
-                        <i class="fa fa-spotify"></i>
-                    </a>
-                    <a href="https://www.youtube.com/results?search_query={{searchQuery}}" class="track__info__youtube" target="_blank">
-                        <i class="fa fa-youtube"></i>
-                    </a>
+                    <div class="track__info__search">
+                        <a href="https://www.youtube.com/results?search_query={{searchQuery}}" class="track__info__youtube" target="_blank">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                        <a href="spotify:search:{{searchQuery}}" class="track__info__spotify">
+                            <i class="fa fa-spotify"></i>
+                        </a>
+                    </div>
                 </div>
         </div>
     </div>

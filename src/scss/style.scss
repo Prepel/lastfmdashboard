@@ -85,10 +85,14 @@ body {
             display: block;
         }
 
-        &__spotify {
+        &__search{
             position: absolute;
             bottom: 0;
             right: 0;
+            float: right;
+        }
+
+        &__spotify {
             color: $colorSpotify;
 
             &:hover {
@@ -97,9 +101,6 @@ body {
         }
 
         &__youtube {
-            position: absolute;
-            bottom: 0;
-            right: 20px;
             color: $colorYoutube;
 
             &:hover {

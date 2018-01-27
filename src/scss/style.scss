@@ -1,52 +1,126 @@
-.history .track{
-    border: 1px solid lightgrey;
-    height: 150px;
-    width: 100px;
+$font-primary: 'Roboto Condensed', sans-serif;
+$font-secondary: 'Fjalla One', sans-serif;
+$colorDark: #252422;
+$colorWhite: #FFFFFF;
+$colorHighlight: #EB5E28;
+$colorLight: #FFFCF2;
+$colorSpotify: #6AE368; 
+
+body {
+    font-family: $font-primary;
+    background-color: $colorDark;
+    color: $colorLight;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    &__avatar {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $colorWhite;
+    border: 2px solid $colorLight;
+    border-radius: 100%;
     overflow: hidden;
-    float: left;
+    z-index: 1;
+    margin-right: 15px;
+
+        img {
+            width: 50px;
+        }
+    }
+
+    &__name {
+        font-family: $font-secondary;
+        font-size: 1.8em;
+
+        a {
+            color: $colorLight;
+            
+            &:hover {
+                color: lighten($colorLight, 2%);
+            }
+
+            &:focus,
+            &:active {
+                color: darken($colorLight, 2%);
+            }
+        }
+    }
 }
 
-.track img{
-    width: 100%;
+.track  {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &:nth-child(odd) {
+        background-color: lighten($colorDark, 5%);
+    }
+
+    &:nth-child(even) {
+        background-color: lighten($colorDark, 2%);
+    }
+
+    &__image {
+        margin-right: 15px;
+
+        img {
+            width: 150px;
+            border: 1px solid $colorLight;
+        }
+    }
+
+    &__info {
+        position: relative;
+        width: 100%;
+
+        &__date {
+            display: block;
+        }
+
+        &__spotify {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: $colorSpotify;
+
+            &:hover {
+                color: lighten($colorSpotify, 2%);
+            }
+        }
+    }
 }
 
-.track-history{
-    overflow-x: scroll;
-    height: 45%;
-    width: 100%;
+.albumart {
+    position: relative;
+
+    &__image {
+        width: 100%;
+        border: 2px solid $colorWhite;
+    }
+
+    &__song {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: $colorWhite;
+        opacity: 0.9;
+        padding: 10px;
+        color: $colorHighlight;
+        font-weight: bold;
+    }
 }
 
 .current-track {
     height: auto;
-}
-
-.current-tracks {
-    min-height: 50px;
-}
-
-h1 a {
-    color: inherit;
-}
-
-h1 {
-    margin: 20px 20px 20px 120px;
-}
-
-.profile-pic {
-    position: absolute;
-    border-radius: 50%;
-    border: 2px solid #E0E0E1;
-    top: 5px;
-    width: 99px;
-    height: 99px;
-    overflow: hidden;
-    z-index: 1;
-    float: right;
-    display: block;
-    left: 15px;
-    background-color: white;
-
-    img {
-        width: 100px;
-    }
+    background-color: $colorHighlight;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
 }

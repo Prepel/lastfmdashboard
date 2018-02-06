@@ -6,3 +6,5 @@ class LastFM {
     }
 
 }
+
+export {LastFM as default};

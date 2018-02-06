@@ -2,7 +2,10 @@ import AbstractPresenter from './AbstractPresenter';
 
 class Track extends AbstractPresenter {
 
-    constructor(trackModel){
+    /**
+     * @param {TrackModel} trackModel
+     */
+    constructor(trackModel) {
         super(trackModel, '');
     }
 }

@@ -3,6 +3,10 @@ import ArtistModel from '../Model/ArtistModel.js';
 
 class TrackModelFactory {
 
+    /**
+     * @param lastFMTrack
+     * @returns {TrackModel}
+     */
     getNewTrackModel(lastFMTrack) {
 
         const track = lastFMTrack[0];

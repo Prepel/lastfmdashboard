@@ -1,6 +1,5 @@
 import UserModel from '../Model/UserModel.js';
 
-
 class UserModelFactory {
 
     constructor() {
@@ -8,6 +7,10 @@ class UserModelFactory {
         this.userImageFallbackUrl = '';
     }
 
+    /**
+     * @param lastFMUser
+     * @returns {UserModel}
+     */
     getNewUser(lastFMUser) {
 
         const user = lastFMUser.user;

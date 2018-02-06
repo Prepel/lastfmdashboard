@@ -1,5 +1,11 @@
 class TrackModel {
 
+    /**
+     * @param {string} name
+     * @param {string} image
+     * @param {number} timestamp
+     * @param {ArtistModel} artistModel
+     */
     constructor(name, image, timestamp, artistModel) {
         this.timestamp = timestamp;
         this.name = name;
@@ -7,7 +13,6 @@ class TrackModel {
 
         this.artist = artistModel;
     }
-
 }
 
 export {TrackModel as default};

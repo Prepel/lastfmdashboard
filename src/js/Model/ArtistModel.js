@@ -1,6 +1,9 @@
 class ArtistModel {
 
-    constructor(name){
+    /**
+     * @param {string} name
+     */
+    constructor(name) {
         this.name = name;
     }
 }

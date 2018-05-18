@@ -198,6 +198,7 @@ function renderTrack(track, username){
     objectClone = objectClone.replace("{{artist}}", track.artist );
     objectClone = objectClone.replace("{{image-src}}", track.image );
     objectClone = objectClone.replace("{{searchQuery}}", (track.artist + " - " + track.name).replace(/ /g,"%20") );
+    objectClone = objectClone.replace("{{searchQuery}}", (track.artist + " - " + track.name).replace(/ /g,"%20") );
     objectClone = objectClone.replace("{{datetime}}", dateTime);
     objectClone = objectClone.replace('style="display:none"', '' );
     objectClone = objectClone.replace("track-template", 'track' );

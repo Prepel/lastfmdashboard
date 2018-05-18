@@ -4,7 +4,8 @@ $colorDark: #252422;
 $colorWhite: #FFFFFF;
 $colorHighlight: #EB5E28;
 $colorLight: #FFFCF2;
-$colorSpotify: #6AE368; 
+$colorSpotify: #6AE368;
+$colorYoutube: #FF0000;
 
 body {
     font-family: $font-primary;
@@ -84,14 +85,26 @@ body {
             display: block;
         }
 
-        &__spotify {
+        &__search{
             position: absolute;
             bottom: 0;
             right: 0;
+            float: right;
+        }
+
+        &__spotify {
             color: $colorSpotify;
 
             &:hover {
                 color: lighten($colorSpotify, 2%);
+            }
+        }
+
+        &__youtube {
+            color: $colorYoutube;
+
+            &:hover {
+                color: lighten($colorYoutube, 2%);
             }
         }
     }

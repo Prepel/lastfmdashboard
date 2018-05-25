@@ -147,6 +147,47 @@ body {
     cursor: pointer;
 
     &__popup{
-        color: black;
+        color: $colorWhite;
+
+        .modal-content{
+            background-color: $colorDark;
+        }
+
+        .fa {
+            line-height: 24px;
+        }
+
+        .user{
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 15px;
+            justify-content: space-between;
+
+            &__info{
+                display: flex;
+            }
+
+            &__delete{
+                cursor: pointer;
+            }
+
+            &__add{
+                margin-top: 15px;
+
+                .btn{
+                    border-radius: 0 .25rem .25rem 0;
+                }
+            }
+
+            &:nth-child(odd){
+                background-color: lighten($colorDark, 5%);
+            }
+
+            &:nth-child(even){
+                background-color: lighten($colorDark, 2%);
+            }
+
+        }
     }
+
 }

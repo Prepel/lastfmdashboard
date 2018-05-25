@@ -227,5 +227,75 @@ function hideCurrentPlayedTrack(username){
 
 function hideNowPlayed(username){
     $('#nowplaying-' + username).remove();
+}
 
+function saveNumberOfTracksShown()
+{
+    var numberOfTracks = $('#setting-max-shown').val();
+    localStorage.setItem("numberOfTracks", numberOfTracks);
+}
+
+function getNumberOfTracksShown()
+{
+    return localStorage.getItem("numberOfTracks");
+}
+
+function saveNumberOfHistoryOnLoad()
+{
+    var numberOfHistory = $('#setting-max-history').val();
+    localStorage.setItem("numberOfHistory", numberOfHistory);
+}
+
+function getNumberOfHistoryOnLoad()
+{
+    return localStorage.getItem("numberOfHistory");
+}
+
+function addUser()
+{
+    var names = getUsers();
+    if(!names){
+        names = [];
+    }
+
+    var toAdd = $('#add-user-name').val();
+
+    if(!names.includes(toAdd)){
+        names.push(toAdd);
+        localStorage.setItem("names", JSON.stringify(names));
+    } else {
+        console.log('duplicate!!!');
+    }
+
+    $('#add-user-name').val("")
+}
+
+function getUsers()
+{
+    var storedNames = JSON.parse(localStorage.getItem("names"));;
+
+    return storedNames;
+}
+
+function removeUser(username)
+{
+    var names = getUsers();
+    if(!names){
+        names = [];
+    }
+
+    var index = names.indexOf(username);
+    if (index > -1) {
+        names.splice(index, 1);
+    }
+
+    localStorage.setItem("names", JSON.stringify(names));
+}
+
+function initSettingsPopup()
+{
+    $('#setting-max-shown').val(getNumberOfTracksShown);
+    $('#setting-max-history').val(getNumberOfHistoryOnLoad());
+
+    // todo load and render users.
 }

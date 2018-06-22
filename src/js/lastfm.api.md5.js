@@ -263,3 +263,5 @@ function binl2b64(binarray) {
     }
     return str;
 }
+
+export {md5 as default};

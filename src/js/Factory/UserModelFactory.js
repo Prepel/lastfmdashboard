@@ -4,7 +4,7 @@ class UserModelFactory {
 
     constructor() {
         //todo: Use local image
-        this.userImageFallbackUrl = '';
+        this.userImageFallbackUrl = 'http://via.placeholder.com/150x150';
     }
 
     /**

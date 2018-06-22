@@ -125,3 +125,5 @@ function LastFMCache() {
         localStorage.setObject(name, {});
     };
 };
+
+export {LastFMCache as default};

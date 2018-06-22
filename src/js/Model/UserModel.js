@@ -16,14 +16,14 @@ class UserModel {
     }
 
     /**
-     * @param {Track} track
+     * @param {TrackModel} track
      */
     addTrack(track) {
         this.trackList.unshift(track);
     }
 
     /**
-     * @param {Track} track
+     * @param {TrackModel} track
      */
     setTrackCurrentlyPlaying(track) {
         this.trackCurrentlyPlaying = track;

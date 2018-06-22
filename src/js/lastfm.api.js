@@ -4,6 +4,8 @@
  *
  */
 
+import md5 from './lastfm.api.md5.js';
+
 function LastFM(options) {
     /* Set default values for required options. */
     var apiKey = options.apiKey || '';
@@ -845,3 +847,5 @@ function LastFM(options) {
         }
     };
 }
+
+export {LastFM as default};

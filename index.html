@@ -1,4 +1,5 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,58 +9,15 @@
     <title>last.fm Dashboard</title>
 
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto+Condensed" rel="stylesheet">
-
     <link rel="stylesheet" href="public/css/style.css">
 <body>
 
 <div class="container-fluid">
-    <div class="row" id="users">
-
-        <div class="col-12 col-sm-3" id="user-template" style="display:none">
-            <div class="user">
-                <div class="user__avatar">
-                    <img src="{{userimage}}" />
-                </div>
-                <div class="user__name"><a href="{{userurl}}" target="_blank">{{username}}</a></div>
-            </div>
-
-            <div class="row current-tracks" id="current-tracks-{{username}}" style=""></div>
-            <div class="row track-history" id="tracks-{{username}}"></div>
-        </div>
-
-        <div class="col-12 current-track" id="current-track-template" style="display:none">
-            <div class="row">
-                <div class="col-12">
-                    <div class="albumart">
-                        <img src="{{image-src}}" class="albumart__image"/>
-
-                        <p class="albumart__song"><img id="nowplaying-{{username}}" src="https://www.last.fm/static/images/icons/eq_icon.2ee5f390e4e9.gif"/> {{artist}} - {{titel}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 track" id="track-template" style="display:none">
-                <div class="track__image">
-                    <img src="{{image-src}}"/>
-                </div>
-                <div class="track__info">
-                    <p>
-                        <span class="track__info__date">
-                            {{datetime}}
-                        </span>
-                        {{artist}} - {{titel}}
-                    </p>
-
-                    <a href="spotify:search:{{searchQuery}}" class="track__info__spotify"><i class="fa fa-spotify"></i></a>
-                </div>
-        </div>
-    </div>
+    <div class="row" id="users"></div>
 </div>
 
 <!-- End Footer Section -->
-<script src="config.js"></script>
-<script src="public/js/script.js"></script>
+<script src="./public/js/script.js"></script>
 
 </body>
 </html>
